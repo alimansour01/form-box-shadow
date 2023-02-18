@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./pro/pro.css">
+    <title>bostman</title>
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(./imges/5.jpg);
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .card {
+        transition: 0.5s;
+    }
+    .container .card:hover {
+        transform: scale(1.1);
+        color: hsl(10, 10%, 94%);
+    }
+    .container .card form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 350px;
+        height: 350px;
+        box-shadow: 10px 30px 30px rgba(1, 1, 1, 15%);
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+    .container .card form:hover {
+    box-shadow: 1px 1px 15px hsl(0, 0%, 94%);
+    }
+    .container .card form input {
+        width: 60%;
+        height: 35px;
+        margin: 15px auto;
+        border: none;
+        outline: none;
+        background: hsl(0, 0%, 94%);
+        border-radius: 5px;
+        transition: 0.5s;
+        padding: 15px;
+    }
+    .container .card form input:focus {
+        box-shadow: 1px 1px 15px hsl(0, 0%, 94%);
+    }
+    h1 {
+        margin-bottom: 10px;
+        transition: 0.5s;}
+    .container .card form button {
+        outline: none;
+        margin: 15px;
+        padding: 15px;
+        outline: none;
+        border: none;
+        background: hsl(0, 0%, 94%);
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .container .card form button:hover {
+    box-shadow: 1px 1px 15px hsl(0, 0%, 94%) ;
+    }
+</style>
+<div class="container">
+    <div class="card">
+        <form action="" method="post">
+            <h1>login form</h1>
+            <input type="text" placeholder="user name">
+            <input type="password" placeholder="password">
+            <button btn>sing in</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
